@@ -25,6 +25,7 @@
 [Решение будет добавлено после получения задания]
 
 ✅ GitLab развернут локально (http://192.168.30.196)  
+
 ✅ Создан проект `my-first-project-datskoii`  
 ✅ Зарегистрирован GitLab Runner в режиме Docker (Active)
 
@@ -37,6 +38,33 @@
    ![](screenshots/runner.png)
 
 ### Задание 2
+
+###gitlab-ci.yml
+
+``yaml
+stages:
+  - test
+  - build
+
+test:
+  stage: test
+  tags:
+    - docker
+  image: golang:1.17
+  script:
+    - go test .
+
+build:
+  stage: build
+  tags:
+    - docker
+  image: docker:latest
+  script:
+    - docker build .
+
+1. скриншот успешного pipeline
+   ![](screenshots/pipelines.png)
+
 [Решение будет добавлено после получения задания]
 
 ---
