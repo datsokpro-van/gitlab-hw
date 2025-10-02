@@ -41,7 +41,6 @@
 # Отчёт по домашнему заданию «GitLab CI/CD»
 
 ## Конфигурация `.gitlab-ci.yml`
-
 ```yaml
 stages:
   - test
@@ -62,9 +61,11 @@ build:
   image: docker:latest
   script:
     - docker build .
-###Скриншот
-1. скриншот успешного pipeline
-   ![](screenshots/pipelines.png)
+```
+## Скриншот успешного pipeline
+
+![Pipeline success](screenshots/pipelines.png)
+
 
 [Решение будет добавлено после получения задания]
 
