@@ -42,7 +42,7 @@
 
 ## Конфигурация `.gitlab-ci.yml`
 
-yaml
+```yaml
 stages:
   - test
   - build
@@ -62,7 +62,7 @@ build:
   image: docker:latest
   script:
     - docker build .
-
+###Скриншот
 1. скриншот успешного pipeline
    ![](screenshots/pipelines.png)
 
