@@ -42,7 +42,7 @@
 
 ## Конфигурация `.gitlab-ci.yml`
 
-```yaml
+yaml
 stages:
   - test
   - build
