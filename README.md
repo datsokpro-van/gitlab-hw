@@ -38,10 +38,11 @@
    ![](screenshots/runner.png)
 
 ### Задание 2
+# Отчёт по домашнему заданию «GitLab CI/CD»
 
-###gitlab-ci.yml
+## Конфигурация `.gitlab-ci.yml`
 
-``yaml
+```yaml
 stages:
   - test
   - build
